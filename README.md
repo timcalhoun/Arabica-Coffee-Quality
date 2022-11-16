@@ -60,7 +60,7 @@ For each of the variables above, they were categorical data. We changed them for
 ## Statistical Modeling
 **Tasks:**
 
-*1. Assumption Testing - Does Country.of.Origin & Processing.Method affect Total.Cup.Points
+Assumption Test 1 - Does Country.of.Origin & Processing.Method affect Total.Cup.Points
    - We passed the assumption of Normality, Sample Size and Independence
    - We ran 2-way ANOVA against Total.Cup.Points
       * Country.of.Origin & Country.of.Origin w/Processing.Method had significance
@@ -71,12 +71,12 @@ For each of the variables above, they were categorical data. We changed them for
       * When running a linear model to correct violation, we were unable to correct
   - Post Hocs – will not be moving on with these variables as a predictor of Total.Cup.Points
  
- * 2. Assumption Testing - Does Region.Name & Processing.Method affect Total.Cup.Points
+ Assumption Test 2 - Does Region.Name & Processing.Method affect Total.Cup.Points
     - We ran the same as above but for Region.Name
     * Ended up with the same results, our assumption was by grouping into Regions, you could possibly find more significance than individual countries – assumption was incorrect
   - Post Hocs – will not be moving on with these variables as a predictor of Total.Cup.Points
 
-  * 3. Assumption Testing - Does Country.of.Origin affect Total.Cup.Points
+  Assumption Test 3 - Does Country.of.Origin affect Total.Cup.Points
     - We ran a histogram, normally distributed with a slight negative skew
 <img style="display: inline; margin: 0 5px;" title="Histogram" src="img/histResid1.png" alt="" width="800" height="300"/>
    - We passed the assumption of Normality, Sample Size and Independence
@@ -88,7 +88,7 @@ For each of the variables above, they were categorical data. We changed them for
      *There is significance between certain countries with the biggest difference between Colombia and Mexico.  This has to do with Mexico and Colombia have 2 of 3 largest sample sizes
   - Post Hocs - Since assumption of homogeneity of variance wasn't met, this shows little difference between total cup point means, but partially due to the sample of size of each individual coffee.  There could be enough difference to sway how you go about trying coffee in the future 
 
-  * 4. Assumption Testing - Does Region.Name affect Total.Cup.Points
+  Assumption Test 4 - Does Region.Name affect Total.Cup.Points
     - We ran a histogram, normally distributed with a slight negative skew
    - We passed the assumption of Normality, Sample Size and Independence
    - We ran an Bartlett Test & Fligner Test against Total.Cup.Points
