@@ -98,3 +98,23 @@ Assumption Test 1 - Does Country.of.Origin & Processing.Method affect Total.Cup.
   - We ran pairwise t-test and show there was significance between certain countries
     * There is significance between Africa - Asia, C America and S America; Asia - Mexico and S America; C America - S America, Mexico - S America
 - Post Hocs - Since assumption of homogeneity of variance wasn't met, post hocs show little difference between total cup point means, but there could be enough of a difference to sway what region you prefer or want to purchase from
+
+ Assumption Test 5 – Does Processing.Method affect Acidity & Aftertaste score
+  - Since IV is categorical and DVs are continuous, we will be running a MANOVA
+  - Subset the DVs to create a matrix to test for assumptions starting with Multivariate Normality running a Wilkes-Shapiro test
+      * Test violated the assumption of multivariate normality
+ - Post Hocs – Data does not meet the assumption for a MANOVA, will not be proceeding
+
+Assumption Test 6 – Does Altitude affect Total.Cup.Points
+  - Pearson correlation shows there is significance, but fairly low correlation
+  - We ran Linear Regression, the overall model shows significance, but altitude is able to explain about 3% of the factors going into Total.Cup.Points
+  - We plotted altitude against Total.Cup.Points and it shows positive correlation with majority of coffee grown between 1,100 & 1,600 meters
+<img style="display: inline; margin: 0 5px;" title="Altitude" src="img/altCorr.png" alt="" width="800" height="300"/>
+- Post Hocs - Overall, Altitude can impact Total.Cup.Points, but there are many other variables involved in Total.Cup.Points
+
+
+## Stepwise Regression
+What scoring categories affect Cupper.Points?
+  - Cupper.Points is what the grader believes is the score taking into account all other categories tested
+  - We ran all 9 other categories through stepwise regression: Aroma + Flavor + Aftertaste + Acidity + Body + Balance + Uniformity + Clean.Cup + Sweetness
+  * The best model for Cupper.Points is **Flavor, Aftertaste, Balance, Acidity, Body & Clean.Cup**.  Flavor, Aftertaste & Balance are the most significant in determining Cupper.Points.  Clean.Cup is not significant at all, but combined with the other 5 scoring categories, gives the best result.
