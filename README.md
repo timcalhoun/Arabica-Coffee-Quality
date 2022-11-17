@@ -118,3 +118,27 @@ What scoring categories affect Cupper.Points?
   - Cupper.Points is what the grader believes is the score taking into account all other categories tested
   - We ran all 9 other categories through stepwise regression: Aroma + Flavor + Aftertaste + Acidity + Body + Balance + Uniformity + Clean.Cup + Sweetness
   * The best model for Cupper.Points is **Flavor, Aftertaste, Balance, Acidity, Body & Clean.Cup**.  Flavor, Aftertaste & Balance are the most significant in determining Cupper.Points.  Clean.Cup is not significant at all, but combined with the other 5 scoring categories, gives the best result.
+
+
+## Model Building 
+
+After finding the best fit Stepwise Regression Model, we wanted to run Machine Learning to see the accuracy of predicting the Cupper.Points
+
+I tried 2 different models and evaluated them using Accuracy Score and mean cross validation score. 
+
+I tried two different models:
+*	**Linear Regression**  
+*	**Random Forest** 
+
+## Model performance
+The Linear Regression model outperformed the Random Forest on the test and validation sets. 
+*	**Linear Regression** : Accuracy = 70%  mean cross_val_score = .12
+*	**Random Forest**: Accuracy = 64% mean cross_val_score = -.18
+
+We added k-Fold Cross Validation to Linear Regression Model, using **8 folds**, we got within **.01** of score
+
+     
+## Conclusions
+* At the end of the day, QCI helps determine best defect-free specialty coffee
+* Although your bag of coffee doesn’t list altitude, know that when taking that nice sip of Arabica Natural Processed coffee from Colombia, altitude did attribute to the wonderful taste
+* Lastly, being certified and continually keep your calibration skills up as a grader is key, but with the proper built end user model, the grader could put in the proper scoring category scores and take the guess work out of Cupper.Points, possibly bringing more value to the Total.Cup.Score
