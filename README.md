@@ -1,5 +1,5 @@
 # Arabica-Coffee-Quality
-# Brew-ston, We Have a Problem…I’m a Coffee Snob
+# Brew-ston, We Have a Problem…I Might be a Coffee Snob
 [Final Presentation]( https://github.com/timcalhoun/Arabica-Coffee-Quality-Factors/tree/main/Presentation)
 
 [Dataset]( https://github.com/jldbc/coffee-quality-database/blob/master/data/arabica_data_cleaned.csv) <br>
