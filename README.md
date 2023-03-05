@@ -23,7 +23,7 @@
 **RStudio:** 2022.07.0 <br>
 **Packages:** dplyr, tidyr, rcompanion, car, ggplot2, tidyverse, mvnormtest, writexl <br>
 **Articles:** 
-   - [Two-way Anova] (https://www.statology.org/two-way-anova-r/)
+   - [Two-way Anova](https://www.statology.org/two-way-anova-r/)
 
 ## Data Wrangling
 We initially looked at our basic column structures and what columns we wanted to keep.
